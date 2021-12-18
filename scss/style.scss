@@ -1,0 +1,21 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+        display: none;
+        font-size: 3rem;
+        background: black;
+        color: #fff;
+        padding: 20px;
+        border-radius: 25px;
+        cursor: pointer;
+
+        &:hover {
+            background: red;
+            color: white;
+            transition: 0.1s;
+        }
+    }
+}
