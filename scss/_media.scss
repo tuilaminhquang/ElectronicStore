@@ -1,0 +1,33 @@
+@mixin xs {
+    @media (max-width: 576px) {
+        @content;
+    }
+}
+@mixin sm {
+    @media (min-width: 576px) {
+        @content;
+    }
+}
+@mixin md {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+@mixin lg {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+@mixin dropdown {
+    background: white;
+    position: absolute;
+    padding: 40px;
+    color: $text-color;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+    p {
+        margin-top: 10px;
+        &:hover {
+            color: red;
+        }
+    }
+}

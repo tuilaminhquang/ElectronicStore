@@ -1,0 +1,19 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+input,
+button {
+    outline: none;
+    border: none;
+    background: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+ul,
+ol {
+    list-style: none;
+}

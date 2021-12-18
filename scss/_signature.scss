@@ -1,0 +1,24 @@
+.signature {
+    margin: 50px 0;
+    .container {
+        .row {
+            padding: 0 8px !important;
+            .signature-article {
+                height: 40px;
+                img {
+                    margin-left: 12px;
+                }
+
+                .signature-content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin-left: 15px;
+                    span {
+                        color: $text-color;
+                    }
+                }
+            }
+        }
+    }
+}

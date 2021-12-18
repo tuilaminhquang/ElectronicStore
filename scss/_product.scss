@@ -1,0 +1,243 @@
+.list-product {
+    height: 670px;
+    margin: 30px 0;
+
+    .product-hot {
+        border: 1px solid rgb(229, 229, 229);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            .img {
+                .product-hover {
+                    background: #7f8c8d;
+                }
+                .product-button {
+                    display: block;
+                }
+            }
+            .hot-content {
+                .price {
+                    display: none;
+                }
+                .list-options {
+                    display: block;
+                }
+            }
+        }
+        .img {
+            width: 80%;
+            position: relative;
+            margin: 25px 0;
+            cursor: pointer;
+            .product-hover {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                transition: 0.5s;
+                opacity: 0.1;
+                top: 0;
+                left: 0;
+            }
+            .product-button {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                padding: 2px;
+                z-index: 1000;
+                display: none;
+                transition: 0.5s;
+                .btn {
+                    background-color: white;
+                    display: block;
+                    padding: 10px;
+                    margin-top: 2px;
+                    transition: 0.3s;
+                    &:hover {
+                        background: black;
+                        color: white;
+                    }
+                }
+                .btn-content {
+                    position: absolute;
+                    display: none;
+                }
+            }
+        }
+        .hot-content {
+            font-size: 14px;
+            width: 80%;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .line-quantity {
+                width: 100%;
+                height: 5px;
+                border-radius: 5px;
+                background-color: rgb(229, 229, 229);
+                .percent {
+                    width: calc(100% - 59%);
+                    height: 100%;
+                    background-color: red;
+                    border-radius: 5px;
+                }
+            }
+            p,
+            span {
+                color: $text-color;
+            }
+            .red {
+                color: red;
+            }
+            .name {
+                cursor: pointer;
+                &:hover {
+                    color: red;
+                }
+            }
+
+            .product-rate {
+                i {
+                    color: #f1c40f;
+                }
+            }
+            .price {
+                height: 10px;
+                .line-through {
+                    text-decoration: line-through;
+                }
+                .new-price {
+                    font-size: 16px;
+                    margin-left: 10px;
+                }
+            }
+            .list-options {
+                transition: 0.5s;
+                display: none;
+                height: 10px;
+                span {
+                    font-weight: 500;
+                    color: black;
+                    font-size: 12px;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                    &.select-options {
+                        border-right: 1px solid #7f8c8d;
+                        padding-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .list-normal {
+        height: 670px;
+    }
+    .product {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        //position: relative;
+        border: 1px solid rgb(229, 229, 229);
+        padding: 15px 5px;
+        &:hover {
+            .img {
+                .product-hover {
+                    background: #7f8c8d;
+                }
+                .product-button {
+                    display: block;
+                }
+            }
+            .product-content {
+                .price {
+                    display: none;
+                }
+                .list-options {
+                    display: block;
+                }
+            }
+        }
+        &-content {
+            width: 80%;
+            height: 100px;
+            padding: 10px 0;
+            font-size: 1rem;
+            span,
+            p {
+                margin-top: 15px;
+                color: #161616;
+                cursor: pointer;
+            }
+            span:hover {
+                color: red;
+            }
+            .list-options {
+                margin-top: 15px;
+                transition: 0.5s;
+                display: none;
+                span {
+                    font-weight: 500;
+                    color: black;
+                    font-size: 12px;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                    &.select-options {
+                        border-right: 1px solid #7f8c8d;
+                        padding-right: 5px;
+                    }
+                }
+            }
+        }
+        .img {
+            width: 80%;
+            height: 60%;
+            position: relative;
+            cursor: pointer;
+            img {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            }
+            .product-hover {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                transition: 0.5s;
+                opacity: 0.15;
+
+                top: 0;
+                left: 0;
+            }
+            .product-button {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                padding: 2px;
+                z-index: 1000;
+                display: none;
+                transition: 0.5s;
+                .btn {
+                    background-color: white;
+                    display: block;
+                    padding: 10px;
+                    margin-top: 2px;
+                    transition: 0.3s;
+                    &:hover {
+                        background: black;
+                        color: white;
+                    }
+                }
+                .btn-content {
+                    position: absolute;
+                    display: none;
+                }
+            }
+        }
+    }
+}
