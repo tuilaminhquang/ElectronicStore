@@ -5,7 +5,7 @@ body {
 	justify-content: center;
 }
 
-body button {
+body .btn-toHome {
 	font-size: 3rem;
 	display: none;
 	padding: 20px;
@@ -15,7 +15,7 @@ body button {
 	background: black;
 }
 
-body button:hover {
+body .btn-toHome:hover {
 	transition: .1s;
 	color: white;
 	background: red;
